@@ -9,35 +9,38 @@ namespace ZADANIE1
     class Car
     {
         public int Id { get; }                          //0
-        public int RokVyroby { get; set; }              //1
-        public int PocetKm { get; set; }                //2
-        public string Znacka { get; set; }              //3
-        public string TypAuta { get; set; }             //4
-        public Palivo DruhPaliva { get; set; }          //5
-        public double Cena { get; set; }                //6
-        public string PredajneMiesto { get; set; }      //7
-        public int PocetDveri { get; set; }             //8
-        public bool JeHavarovane { get; set; }          //9
+        public int ManufactureYear { get; set; }        //1
+        public int Km { get; set; }                     //2
+        public string Brand { get; set; }               //3
+        public string Type { get; set; }                //4
+        public Fuel FuelType { get; set; }              //5
+        public decimal Price { get; set; }                //6
+        public string CityOfSale { get; set; }      //7
+        public int DoorCount { get; set; }             //8
+        public bool IsCrashed { get; set; }          //9
 
-        public enum Palivo
+        public enum Fuel
         {           
             benzin,
-            diesel
+            diesel,
+            hybrid,
+            plyn,
+            elektro
         }
 
         
-        public Car(int id, int rokVyroby, int pocetKm, string znacka, string typAuta, Palivo druhPaliva, double cena, string predajneMiesto, int pocetDveri, bool jeHavarovane)
+        public Car(int id, int manufactureYear, int km, string brand, string type, Fuel fuel, decimal price, string cityOfSale, int doorCount, bool isCrashed)
         {
             Id = id;
-            RokVyroby = rokVyroby;
-            PocetKm = pocetKm;
-            Znacka = znacka;
-            TypAuta = typAuta;
-            DruhPaliva = druhPaliva;
-            Cena = cena;
-            PredajneMiesto = predajneMiesto;
-            PocetDveri = pocetDveri;
-            JeHavarovane = jeHavarovane;
+            ManufactureYear = manufactureYear;
+            Km = km;
+            Brand = brand;
+            Type = type;
+            FuelType = fuel;
+            Price = price;
+            CityOfSale = cityOfSale;
+            DoorCount = doorCount;
+            IsCrashed = isCrashed;
         }
 
 

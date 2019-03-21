@@ -10,10 +10,8 @@ namespace ZADANIE1
     {
         static void Main(string[] args)
         {
-            AutoBazar.OpenFile(AutoBazar.fileName);
-            //AutoBazar.AddCar();
-            AutoBazar.DeleteCar();
-            AutoBazar.SaveToFile(AutoBazar.WriteCarsToString());
+            Menu.MainMenu();
+            
         }
     }
 }
